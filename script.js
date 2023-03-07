@@ -1,7 +1,7 @@
 function calcular() {
 	var saldo = document.getElementById("saldo").value;	
-	var data = new Date(document.getElementById("data").value);
-	var mes = data.getMonth() + 1;
+	/*var data = new Date(document.getElementById("data").value);*/
+	/*var mes = data.getMonth() + 1;*/
 	var aliquota = 0;
 	var parcela = 0;
 	var resultado = 0;
