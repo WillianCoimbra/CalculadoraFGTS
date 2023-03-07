@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Saque-Aniversário FGTS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<h1>Calculadora de Saque-Aniversário FGTS</h1>
+		<form>
+			<label for="saldo">Saldo disponível na conta FGTS:</label>
+			<input type="number" id="saldo" name="saldo" required>
+			<label for="data">Data de aniversário:</label>
+			<input type="date" id="data" name="data" required>
+			<button type="button" onclick="calcular()">Calcular</button>
+			<label for="resultado">Valor disponível para saque:</label>
+			<input type="text" id="resultado" name="resultado" readonly>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
