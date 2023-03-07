@@ -11,20 +11,29 @@ function calcular() {
 		return;
 	}
 
-	if (mes >= 1 && mes <= 3) {
+	if (saldo >= 1 && saldo <= 500) {
 		aliquota = 0.5;
 		parcela = 0;
-	} else if (mes >= 4 && mes <= 6) {
+	} else if (saldo > 500 && saldo <= 1000) {
 		aliquota = 0.4;
 		parcela = 50;
-	} else if (mes >= 7 && mes <= 9) {
+	} else if (saldo > 1000 && saldo <= 5000) {
 		aliquota = 0.3;
 		parcela = 150;
-	} else if (mes >= 10 && mes <= 12) {
+	} else if (saldo > 5000 && saldo <= 10000) {
 		aliquota = 0.2;
-		parcela = 250;
+		parcela = 650;
+	} else if (saldo > 10000 && saldo <= 15000) {
+		aliquota = 0.15;
+		parcela = 1150;
+	} else if (saldo > 15000 && saldo <= 20000) {
+		aliquota = 0.1;
+		parcela = 1900;
+	} else if (saldo > 20000) {
+		aliquota = 0.05;
+		parcela = 2900;
 	} else {
-		alert("Data de aniversário inválida.");
+		alert("Saldo inválido.");
 		return;
 	}
 
